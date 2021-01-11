@@ -1,0 +1,40 @@
+{
+    "name": "Periodic Site",
+    "description": "Exxample of Periodic Site Responses",
+    "type": "SiteMap",
+    "domain": "www.vancedubberly.com",
+    "configuration": {
+        "imageURL": "://static.vancedubberly.com",
+        "siteAssets": "://assets.vancedubberly.com",
+        "websocket": "ws://wwww.vancedubberly.com"
+    },
+    "universals":{
+        "header": { "nav":[]},
+        "footer": { "legal":[]}
+    },
+    "children": [
+        {
+            "type": "Page",
+            "name": "Periodic Homepage",
+            "description": "Some Noise",
+            "resource": "",
+            "children": [
+                {
+                    "type": "Blog",
+                    "name": "Periodic Blog",
+                    "slug": "blog",
+                    "description": "A blog for bugs", 
+                    "resource": "blog",
+                    "url": "https://wordpress.com/vance"
+                },
+                {
+                    "type": "Page",
+                    "name": "Example Page",
+                    "slug". "example-page",
+                    "description": "A page.", 
+                    "resource": "example/page"
+                }
+            ]
+        }
+    ]
+}
