@@ -1,40 +1,70 @@
 {
-    "name": "Periodic Site",
-    "description": "Exxample of Periodic Site Responses",
-    "type": "SiteMap",
-    "domain": "www.vancedubberly.com",
-    "configuration": {
-        "imageURL": "://static.vancedubberly.com",
-        "siteAssets": "://assets.vancedubberly.com",
-        "websocket": "ws://wwww.vancedubberly.com"
-    },
-    "universals":{
-        "header": { "nav":[]},
-        "footer": { "legal":[]}
-    },
-    "children": [
+  "name": "Periodic Site",
+  "description": "Exmple of Periodic Site Responses",
+  "type": "SiteMap",
+  "slug": "",
+  "domain": "www.vancedubberly.com",
+  "config": {
+    "apiUrl": "://localhost:8000/api",
+    "imageURL": "://static.vancedubberly.com",
+    "siteAssets": "://assets.vancedubberly.com",
+    "websocket": "ws://wwww.vancedubberly.com"
+  },
+  "universals": {
+    "header": { "nav": [] },
+    "footer": { "legal": [] }
+  },
+  "children": [
+    {
+      "type": "Page",
+      "title": "Periodic Homepage",
+      "slug": "",
+      "resource": "",
+      "description": "Some Noise",
+      "children": [
         {
-            "type": "Page",
-            "name": "Periodic Homepage",
-            "description": "Some Noise",
-            "resource": "",
-            "children": [
+          "type": "Blog",
+          "title": "Periodic Blog",
+          "slug": "blog/index",
+          "resource": "blog",
+          "description": "A blog for bugs",
+          "url": "https://wordpress.com/vance"
+        },
+        {
+          "type": "Page",
+          "title": "Page",
+          "slug": "example-page",
+          "resource": "example-page",
+          "description": "A page.",
+          "children": [
+            {
+              "type": "Page",
+              "title": "Child Page 1",
+              "slug": "child-page-1",
+              "resource": "example-page-1",
+              "description": "A page.",
+              "children": [
                 {
-                    "type": "Blog",
-                    "name": "Periodic Blog",
-                    "slug": "blog",
-                    "description": "A blog for bugs", 
-                    "resource": "blog",
-                    "url": "https://wordpress.com/vance"
-                },
-                {
-                    "type": "Page",
-                    "name": "Example Page",
-                    "slug". "example-page",
-                    "description": "A page.", 
-                    "resource": "example/page"
+                  "type": "Page",
+                  "title": "Child Page 2",
+                  "slug": "child-page-2",
+                  "resource": "example-page-2",
+                  "description": "A page.",
+                  "children": []
                 }
-            ]
+              ]
+            },
+            {
+              "type": "Page",
+              "title": "Child Page 1.1",
+              "slug": "child-page-1-1",
+              "resource": "child-page-1-1",
+              "description": "A page.",
+              "children": []
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }

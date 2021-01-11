@@ -1,0 +1,32 @@
+{
+  "title": "Example HomePage",
+  "description": "Exxample of Periodic Page",
+  "type": "Page",
+  "header": [
+    {
+      "type": "MetaTag",
+      "name": "keywords",
+      "content": "Word 1, Word 2"
+    },
+    {
+      "type": "OpenGraph",
+      "name": "title",
+      "content": "Ding Dong the witch is dead"
+    }
+  ],
+  "content": [
+    {
+      "type": "Hero",
+      "config": {
+        "classes": ["full-height", "text-left"],
+        "transition": ["myFadeFunction"]
+      },
+      "content": {
+        "header": "Written Copy",
+        "eyebrow": "Trendy and dumb",
+        "backgroudImage": "",
+        "resource": "blog"
+      }
+    }
+  ]
+}
